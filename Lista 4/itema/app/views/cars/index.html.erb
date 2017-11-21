@@ -1,24 +1,33 @@
 <h2>Listing Cars</h2>
+    <%= link_to 'New car', new_car_path %>
+    <table>
+    <tr>
+        <th>Plate</th>
+        <th>Car Type</th>
+        <th>Year</th>
+        <th colspan="3"></th>
+    </tr>
 
-<%= link_to 'New car', new_car_path %>
-<table>
- <tr>
-   <th>Plate</th>
-   <th>Car Type</th>
-   <th>Year</th>
-   <th colspan="3"></th>
- </tr>
-
- <% @car.each do |car| %>
-   <tr>
-     <td><%= car.plate %></td>
-     <td><%= car.cartype %></td>
-     <td><%= car.year %></td>
-     <td><%= link_to 'Show', car_path(car) %></td>
-     <td><%= link_to 'Edit', edit_car_path(car) %></td>
-     <td><%= link_to 'Delete', car_path(car),
-             method: :delete,
-             data: { confirm: 'Are you sure?' } %></td>
-   </tr>
- <% end %>
+    <% @car.each do |car| %>
+        <tr>
+            <td><%= car.plate %></td>
+            <td>
+            <% if car.cartype == 1 %>
+                Urban
+            <% end %>
+            <% if car.cartype == 2 %>
+                Motocross
+            <% end %>
+            <% if car.cartype == 3 %>
+                Luxury
+            <% end %>
+            </td>
+            <td><%= car.year %></td>
+            <td><%= link_to 'Show', car_path(car) %></td>
+            <td><%= link_to 'Edit', edit_car_path(car) %></td>
+            <td><%= link_to 'Delete', car_path(car),
+                    method: :delete,
+                    data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+    <% end %>
 </table>

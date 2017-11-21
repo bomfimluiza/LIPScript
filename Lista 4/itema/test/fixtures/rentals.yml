@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  startdate: 2017-11-21 14:49:31
+  enddate: 2017-11-21 14:49:31
+  client: one
+  car: one
+
+two:
+  startdate: 2017-11-21 14:49:31
+  enddate: 2017-11-21 14:49:31
+  client: two
+  car: two

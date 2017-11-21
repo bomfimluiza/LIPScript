@@ -1811,3 +1811,724 @@ Processing by CarsController#index as HTML
 Completed 200 OK in 43ms (Views: 36.5ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-21 13:42:48 -0300
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 508ms (Views: 470.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 13:42:50 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 56ms (Views: 46.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 13:42:52 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (21.2ms)
+  Rendered cars/new.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 69ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 13:42:59 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UYtIpuzHR0qGZYmmdtBH3IJV4iGCoU6sf6uQUEJ+0zQyppKIuzSGqONw2zd+3hcxZnUmqugv3LFISXkLQu3ivA==", "car"=>{"plate"=>"", "year"=>""}, "city_id"=>"1", "commit"=>"Create Car"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (6.1ms)
+  Rendered cars/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 68ms (Views: 59.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 13:43:03 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (7.8ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 49ms (Views: 38.8ms | ActiveRecord: 7.8ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 13:45:20 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UYtIpuzHR0qGZYmmdtBH3IJV4iGCoU6sf6uQUEJ+0zQyppKIuzSGqONw2zd+3hcxZnUmqugv3LFISXkLQu3ivA==", "car"=>{"plate"=>"", "year"=>""}, "city_id"=>"1", "commit"=>"Create Car"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (1.4ms)
+  Rendered cars/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.9ms)
+
+
+  
+SyntaxError (/Users/bomfimluiza/Documents/GitHub/LIPScript/Lista 4/itema/app/views/cars/_form.html.erb:22: syntax error, unexpected ']', expecting ')'
+...'Motocross', 2], ['Luxury', 3]], 1)) );@output_buffer.safe_a...
+...                               ^):
+  
+app/views/cars/_form.html.erb:22: syntax error, unexpected ']', expecting ')'
+app/views/cars/new.html.erb:3:in `_app_views_cars_new_html_erb___1598838941012810314_70329554905120'
+app/controllers/cars_controller.rb:24:in `create'
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 13:45:23 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 45ms (Views: 41.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 13:45:25 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (1.4ms)
+  Rendered cars/new.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/bomfimluiza/Documents/GitHub/LIPScript/Lista 4/itema/app/views/cars/_form.html.erb:22: syntax error, unexpected ']', expecting ')'
+...'Motocross', 2], ['Luxury', 3]], 1)) );@output_buffer.safe_a...
+...                               ^):
+  
+app/views/cars/_form.html.erb:22: syntax error, unexpected ']', expecting ')'
+app/views/cars/new.html.erb:3:in `_app_views_cars_new_html_erb___1598838941012810314_70329529463980'
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 13:45:38 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (3.9ms)
+  Rendered cars/new.html.erb within layouts/application (6.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 4, expected 1..2)):
+    19:     </p>
+    20:     <p>
+    21:         <%= f.label :cartype %><br>
+    22:         <%= select_tag(:city_id, options_for_select(['Urban', 1], ['Motocross', 2], ['Luxury', 3], 1)) %>
+    23:     </p>
+    24:     <p>
+    25:         <%= f.label :year %><br>
+  
+app/views/cars/_form.html.erb:22:in `block in _app_views_cars__form_html_erb__3929214573690318284_70329529822780'
+app/views/cars/_form.html.erb:1:in `_app_views_cars__form_html_erb__3929214573690318284_70329529822780'
+app/views/cars/new.html.erb:3:in `_app_views_cars_new_html_erb___1598838941012810314_70329529973000'
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 13:45:52 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (2.1ms)
+  Rendered cars/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 13:45:56 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 13:45:57 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (2.7ms)
+  Rendered cars/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 50ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 13:46:08 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2nWsoB4S6tBv+sXHhl1u5ex5gvqqfq+yWKTsJBFeNA65WHaOSeErMgrvl1aOUz4ICFlGccDwPa9vRgV/Ec0Fhg==", "car"=>{"plate"=>"oib6749", "year"=>"9876"}, "city_id"=>"2", "commit"=>"Create Car"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (2.4ms)
+  Rendered cars/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 34ms (Views: 31.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 13:46:27 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2nWsoB4S6tBv+sXHhl1u5ex5gvqqfq+yWKTsJBFeNA65WHaOSeErMgrvl1aOUz4ICFlGccDwPa9vRgV/Ec0Fhg==", "car"=>{"plate"=>"oib6749", "year"=>"9876"}, "city_id"=>"2", "commit"=>"Create Car"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (2.7ms)
+  Rendered cars/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 40ms (Views: 36.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 13:46:31 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 45ms (Views: 34.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 13:46:34 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2nWsoB4S6tBv+sXHhl1u5ex5gvqqfq+yWKTsJBFeNA65WHaOSeErMgrvl1aOUz4ICFlGccDwPa9vRgV/Ec0Fhg==", "car"=>{"plate"=>"oib6749", "year"=>"9876"}, "city_id"=>"2", "commit"=>"Create Car"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (3.2ms)
+  Rendered cars/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 38ms (Views: 34.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 13:46:36 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 13:46:38 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 33ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 13:46:40 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (4.0ms)
+  Rendered cars/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 13:46:48 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w7ixsSZgeQ6mbIjNimG/3zScT3IK1DYKzqpG7aERyG2glWufcZO47MN52lyCb+8y0LyL+WBapBf5SK+2oYL55Q==", "car"=>{"plate"=>"oiy6543", "year"=>"2345"}, "cartype"=>"3", "commit"=>"Create Car"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (2.2ms)
+  Rendered cars/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 37ms (Views: 32.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 13:47:34 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w7ixsSZgeQ6mbIjNimG/3zScT3IK1DYKzqpG7aERyG2glWufcZO47MN52lyCb+8y0LyL+WBapBf5SK+2oYL55Q==", "car"=>{"plate"=>"oiy6543", "year"=>"2345"}, "cartype"=>"3", "commit"=>"Create Car"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (7.5ms)
+  Rendered cars/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 55ms (Views: 51.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 13:47:37 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 13:47:38 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (2.2ms)
+  Rendered cars/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 62ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 13:47:47 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9l7Gq/Om9h6aZdngrNQ5j8Nqo00WwhxbzJGgOvUcmxCVcxyFpFU3/P9wi3Gk2mliJ0pnxnxMjkb7c0lh9Y+qmA==", "car"=>{"plate"=>"oiu76543", "cartype"=>"3", "year"=>"2345"}, "commit"=>"Create Car"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "cars" ("plate", "cartype", "year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["plate", "oiu76543"], ["cartype", 3], ["year", 2345], ["created_at", "2017-11-21 16:47:47.610395"], ["updated_at", "2017-11-21 16:47:47.610395"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cars/4
+Completed 302 Found in 11ms (ActiveRecord: 6.3ms)
+
+
+Started GET "/cars/4" for 127.0.0.1 at 2017-11-21 13:47:47 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 46ms (Views: 26.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 13:47:50 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (1.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 63ms (Views: 55.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 13:52:45 -0300
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 13:52:45 -0300
+Processing by CarsController#index as HTML
+Processing by CarsController#new as HTML
+  Rendering cars/index.html.erb within layouts/application
+  Rendering cars/new.html.erb within layouts/application
+  [1m[36mCar Load (1.9ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (26.7ms)
+  Rendered cars/_form.html.erb (13.9ms)
+  Rendered cars/new.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 163ms (Views: 148.9ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 181ms (Views: 154.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 13:52:50 -0300
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 13:52:50 -0300
+Processing by CarsController#index as HTML
+Processing by CarsController#new as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (6.1ms)
+  Rendered cars/_form.html.erb (4.2ms)
+  Rendered cars/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 84ms (Views: 80.2ms | ActiveRecord: 0.4ms)
+
+
+Completed 200 OK in 89ms (Views: 80.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars/1" for 127.0.0.1 at 2017-11-21 13:52:52 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.7ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 56ms (Views: 43.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/cars/1" for 127.0.0.1 at 2017-11-21 13:53:11 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 38ms (Views: 34.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cars/1" for 127.0.0.1 at 2017-11-21 13:54:01 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 70ms (Views: 39.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 13:54:03 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.6ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (25.2ms)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `cartype' for #<Car::ActiveRecord_Relation:0x007fedc050bb48>):
+    13:    <tr>
+    14:      <td><%= car.plate %></td>
+    15:      <td>
+    16:       <% if @car.cartype == 1 %>
+    17:         Urban
+    18:       <% end %>
+    19:       <% if @car.cartype == 2 %>
+  
+app/views/cars/index.html.erb:16:in `block in _app_views_cars_index_html_erb___4152390524478887243_70329555242440'
+app/views/cars/index.html.erb:12:in `_app_views_cars_index_html_erb___4152390524478887243_70329555242440'
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 13:54:25 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 41ms (Views: 38.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 14:15:52 -0300
+Started GET "/" for 127.0.0.1 at 2017-11-21 14:15:52 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Processing by CarsController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 306ms (Views: 273.7ms | ActiveRecord: 0.0ms)
+
+
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.6ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (19.8ms)
+Completed 200 OK in 353ms (Views: 63.3ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/cars/1" for 127.0.0.1 at 2017-11-21 14:15:59 -0300
+Processing by CarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dYarMhOkYbHFV9Oq4MlLYIh4KF8Rrx7BFF/GYOrMik/k8pYMEZLueA8AGx6veEmoBHcmz0gI3FB/fZVPhNRqIg==", "id"=>"1"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cars
+Completed 302 Found in 10ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 14:15:59 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 65ms (Views: 62.2ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/cars/2" for 127.0.0.1 at 2017-11-21 14:16:02 -0300
+Processing by CarsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VvYb/e90VBLZjy4w8D+pDRuU2r9IBZDetFKeoQgZVhjHgibD7ULb2xPY5oS/jqvFl5vULxGiUk/fcM2OZgG2dQ==", "id"=>"2"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "cars" WHERE "cars"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cars
+Completed 302 Found in 4ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 14:16:02 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars/4/edit" for 127.0.0.1 at 2017-11-21 14:16:03 -0300
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering cars/edit.html.erb within layouts/application
+  Rendered cars/_form.html.erb (22.4ms)
+  Rendered cars/edit.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 69ms (Views: 61.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 14:16:05 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 57ms (Views: 51.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 14:16:06 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (3.3ms)
+  Rendered cars/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 50ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 14:16:20 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oiszzoqenRrguBW2Y0LvR++v1V7v6nG26VA5sVGxPW7BBung3W1c+IWtRydrTL+qC48R1YVk46vestDqUSIM5g==", "car"=>{"plate"=>"OIB7655", "cartype"=>"2", "year"=>"2018"}, "commit"=>"Create Car"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (8.4ms)[0m  [1m[32mINSERT INTO "cars" ("plate", "cartype", "year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["plate", "OIB7655"], ["cartype", 2], ["year", 2018], ["created_at", "2017-11-21 17:16:20.864946"], ["updated_at", "2017-11-21 17:16:20.864946"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cars/5
+Completed 302 Found in 16ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/cars/5" for 127.0.0.1 at 2017-11-21 14:16:20 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 42ms (Views: 37.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 14:16:23 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.5ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 47ms (Views: 38.9ms | ActiveRecord: 0.5ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRentals (20171121173447)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "rentals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "cname" varchar, "cplate" varchar, "startdate" datetime, "enddate" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171121173447"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-11-21 14:38:10 -0300
+Started GET "/" for 127.0.0.1 at 2017-11-21 14:38:10 -0300
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 14:38:10 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Processing by CarsController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 588ms (Views: 585.0ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 637ms (Views: 605.5ms | ActiveRecord: 0.0ms)
+
+
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (2.7ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (70.5ms)
+Completed 200 OK in 773ms (Views: 151.2ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/rentals" for 127.0.0.1 at 2017-11-21 14:38:13 -0300
+Processing by RentalsController#index as HTML
+  Rendering rentals/index.html.erb within layouts/application
+  [1m[36mRental Load (1.1ms)[0m  [1m[34mSELECT "rentals".* FROM "rentals"[0m
+  Rendered rentals/index.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 76ms (Views: 59.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/rentals/new" for 127.0.0.1 at 2017-11-21 14:38:15 -0300
+Processing by RentalsController#new as HTML
+  Rendering rentals/new.html.erb within layouts/application
+  Rendered rentals/_form.html.erb (36.5ms)
+  Rendered rentals/new.html.erb within layouts/application (41.2ms)
+Completed 500 Internal Server Error in 70ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `plate' for #<Rental:0x007feebeeda350>
+Did you mean?  cplate
+               cplate?
+               cplate=):
+    19:     </p>
+    20:     <p>
+    21:         <%= f.label :cplate %><br>
+    22:         <%= f.text_field :plate %>
+    23:     </p>
+    24:     <p>
+    25:         <%= f.label :startdate %><br>
+  
+app/views/rentals/_form.html.erb:22:in `block in _app_views_rentals__form_html_erb___2350066832667741258_70331702022560'
+app/views/rentals/_form.html.erb:1:in `_app_views_rentals__form_html_erb___2350066832667741258_70331702022560'
+app/views/rentals/new.html.erb:3:in `_app_views_rentals_new_html_erb__4341295396388229373_70331691326680'
+Started GET "/rentals/new" for 127.0.0.1 at 2017-11-21 14:38:37 -0300
+Processing by RentalsController#new as HTML
+  Rendering rentals/new.html.erb within layouts/application
+  Rendered rentals/_form.html.erb (7.3ms)
+  Rendered rentals/new.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for "startdate":String):
+    23:     </p>
+    24:     <p>
+    25:         <%= f.label :startdate %><br>
+    26:         <%= f.date_select('rental', 'startdate') %>
+    27:     </p>
+    28:     <p>
+    29:         <%= f.label :enddate %><br>
+  
+app/views/rentals/_form.html.erb:26:in `block in _app_views_rentals__form_html_erb___2350066832667741258_70331688679600'
+app/views/rentals/_form.html.erb:1:in `_app_views_rentals__form_html_erb___2350066832667741258_70331688679600'
+app/views/rentals/new.html.erb:3:in `_app_views_rentals_new_html_erb__4341295396388229373_70331700204820'
+Started GET "/rentals/new" for 127.0.0.1 at 2017-11-21 14:39:34 -0300
+Processing by RentalsController#new as HTML
+  Rendering rentals/new.html.erb within layouts/application
+  Rendered rentals/_form.html.erb (8.0ms)
+  Rendered rentals/new.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 55ms (Views: 50.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rentals" for 127.0.0.1 at 2017-11-21 14:39:57 -0300
+Processing by RentalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S/CZRQUj84uDrlegPBXaK0epiDpRVYi9nQDN8ZU6UxvahKR7BxV8Qkn5nxRzpNjjy6aGqgjySiz2Ip7e+yKzdg==", "rental"=>{"cname"=>"oioioioi", "cplate"=>"oib6543", "startdate(1i)"=>"2017", "startdate(2i)"=>"11", "startdate(3i)"=>"21", "enddate(1i)"=>"2017", "enddate(2i)"=>"11", "enddate(3i)"=>"26"}, "commit"=>"Create Rental"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "rentals" ("cname", "cplate", "startdate", "enddate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["cname", "oioioioi"], ["cplate", "oib6543"], ["startdate", "2017-11-21 00:00:00"], ["enddate", "2017-11-26 00:00:00"], ["created_at", "2017-11-21 17:39:57.916329"], ["updated_at", "2017-11-21 17:39:57.916329"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/rentals/1
+Completed 302 Found in 8ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/rentals/1" for 127.0.0.1 at 2017-11-21 14:39:57 -0300
+Processing by RentalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rentals/show.html.erb within layouts/application
+  Rendered rentals/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 37ms (Views: 29.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/rentals" for 127.0.0.1 at 2017-11-21 14:40:00 -0300
+Processing by RentalsController#index as HTML
+  Rendering rentals/index.html.erb within layouts/application
+  [1m[36mRental Load (0.2ms)[0m  [1m[34mSELECT "rentals".* FROM "rentals"[0m
+  Rendered rentals/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rentals/1/edit" for 127.0.0.1 at 2017-11-21 14:40:08 -0300
+Processing by RentalsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRental Load (1.0ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rentals/edit.html.erb within layouts/application
+  Rendered rentals/_form.html.erb (4.6ms)
+  Rendered rentals/edit.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 61ms (Views: 42.4ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/rentals/1" for 127.0.0.1 at 2017-11-21 14:40:09 -0300
+Processing by RentalsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rPp7w+Rz5ws1LHHhl3KJnwfzbueYK0tXshszVBnHV8JihL38AAA5dxfpajqWPXE8H4omQFhO4cF7M072/s6cyg==", "rental"=>{"cname"=>"oioioioi", "cplate"=>"oib6543", "startdate(1i)"=>"2017", "startdate(2i)"=>"11", "startdate(3i)"=>"21", "enddate(1i)"=>"2017", "enddate(2i)"=>"11", "enddate(3i)"=>"26"}, "commit"=>"Update Rental", "id"=>"1"}
+  [1m[36mRental Load (0.1ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/rentals/1
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/rentals/1" for 127.0.0.1 at 2017-11-21 14:40:09 -0300
+Processing by RentalsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRental Load (0.2ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rentals/show.html.erb within layouts/application
+  Rendered rentals/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rentals" for 127.0.0.1 at 2017-11-21 14:40:11 -0300
+Processing by RentalsController#index as HTML
+  Rendering rentals/index.html.erb within layouts/application
+  [1m[36mRental Load (0.2ms)[0m  [1m[34mSELECT "rentals".* FROM "rentals"[0m
+  Rendered rentals/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 34ms (Views: 27.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rentals/new" for 127.0.0.1 at 2017-11-21 14:40:14 -0300
+Processing by RentalsController#new as HTML
+  Rendering rentals/new.html.erb within layouts/application
+  Rendered rentals/_form.html.erb (3.9ms)
+  Rendered rentals/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/rentals" for 127.0.0.1 at 2017-11-21 14:40:33 -0300
+Processing by RentalsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nC1Ssg9hW6YVnjWHeInk/PZWN4sR8msSF8l6BywjsOBz96uThewLS76Mec9mfa72+gYScSxmZ7lsB+0MUo/meQ==", "rental"=>{"cname"=>"Luiza Bomfim", "cplate"=>"PMM7655", "startdate(1i)"=>"2017", "startdate(2i)"=>"12", "startdate(3i)"=>"22", "enddate(1i)"=>"2017", "enddate(2i)"=>"11", "enddate(3i)"=>"25"}, "commit"=>"Create Rental"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "rentals" ("cname", "cplate", "startdate", "enddate", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["cname", "Luiza Bomfim"], ["cplate", "PMM7655"], ["startdate", "2017-12-22 00:00:00"], ["enddate", "2017-11-25 00:00:00"], ["created_at", "2017-11-21 17:40:33.242266"], ["updated_at", "2017-11-21 17:40:33.242266"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/rentals/2
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/rentals/2" for 127.0.0.1 at 2017-11-21 14:40:33 -0300
+Processing by RentalsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRental Load (0.2ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering rentals/show.html.erb within layouts/application
+  Rendered rentals/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 35ms (Views: 31.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/rentals" for 127.0.0.1 at 2017-11-21 14:40:34 -0300
+Processing by RentalsController#index as HTML
+  Rendering rentals/index.html.erb within layouts/application
+  [1m[36mRental Load (0.2ms)[0m  [1m[34mSELECT "rentals".* FROM "rentals"[0m
+  Rendered rentals/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 33ms (Views: 28.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/rentals/1" for 127.0.0.1 at 2017-11-21 14:40:38 -0300
+Processing by RentalsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"A/F/eIwwlgPxniIRZFppZCCYt9lD+7ThF4flDBhbL/6ShUJGjgYZyjvJ6qUr62usrJe5SRpcdnB8pbYjdkPPkw==", "id"=>"1"}
+  [1m[36mRental Load (0.1ms)[0m  [1m[34mSELECT  "rentals".* FROM "rentals" WHERE "rentals"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "rentals" WHERE "rentals"."id" = ?[0m  [["id", 1]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/rentals
+Completed 302 Found in 12ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/rentals" for 127.0.0.1 at 2017-11-21 14:40:38 -0300
+Processing by RentalsController#index as HTML
+  Rendering rentals/index.html.erb within layouts/application
+  [1m[36mRental Load (0.2ms)[0m  [1m[34mSELECT "rentals".* FROM "rentals"[0m
+  Rendered rentals/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRentals (20171121173447)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[35mDROP TABLE "rentals"[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20171121173447"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRentals (20171121174931)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "rentals" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "startdate" datetime, "enddate" datetime, "client_id" integer, "car_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_ede3db960f"
+FOREIGN KEY ("client_id")
+  REFERENCES "clients" ("id")
+, CONSTRAINT "fk_rails_65a0e99a95"
+FOREIGN KEY ("car_id")
+  REFERENCES "cars" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_rentals_on_client_id" ON "rentals" ("client_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_rentals_on_client_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_rentals_on_client_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_rentals_on_car_id" ON "rentals" ("car_id")[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171121174931"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_rentals_on_car_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_rentals_on_car_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_rentals_on_client_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_rentals_on_client_id' AND type='index'
+[0m

@@ -4,7 +4,15 @@
 </p>
 <p>
     <strong>Car Type:</strong>
-    <%= @car.cartype %>
+    <% if @car.cartype == 1 %>
+        Urban
+    <% end %>
+    <% if @car.cartype == 2 %>
+        Motocross
+    <% end %>
+    <% if @car.cartype == 3 %>
+        Luxury
+    <% end %>
 </p>
 <p>
     <strong>Year:</strong>
