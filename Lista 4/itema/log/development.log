@@ -1,0 +1,1813 @@
+Started GET "/welcome/index" for 127.0.0.1 at 2017-11-21 10:15:02 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 1461ms (Views: 1220.5ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-11-21 10:19:08 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/welcome" for 127.0.0.1 at 2017-11-21 10:19:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-21 10:19:20 -0300
+Started GET "/" for 127.0.0.1 at 2017-11-21 10:19:20 -0300
+Processing by WelcomeController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 741ms (Views: 519.2ms)
+
+
+Completed 200 OK in 752ms (Views: 532.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 10:19:24 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 24ms (Views: 21.7ms)
+
+
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:19:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/clients/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:20:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/clients/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-21 10:20:57 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 43ms (Views: 39.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 10:21:01 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 25ms (Views: 22.3ms)
+
+
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:21:02 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/clients/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:21:06 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/clients/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:21:27 -0300
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/new.html.erb within layouts/application (227.1ms)
+Completed 500 Internal Server Error in 480ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `articles_path' for #<#<Class:0x007fa758038598>:0x007fa75801a570>
+Did you mean?  clients_path):
+    1: <h2>New Client</h2>
+    2: 
+    3: <%= form_for :article, url: articles_path do |f| %>
+    4:     <p>
+    5:         <%= f.label :title %><br>
+    6:         <%= f.text_field :title %>
+  
+app/views/clients/new.html.erb:3:in `_app_views_clients_new_html_erb___327408887973282446_70178336293080'
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:21:54 -0300
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 533ms (Views: 290.5ms)
+
+
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:22:26 -0300
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/new.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 48ms (Views: 43.2ms)
+
+
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:24:35 -0300
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 50ms (Views: 46.4ms)
+
+
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:24:52 -0300
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 40ms (Views: 35.8ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateClients (20171121132620)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "clients" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "address" text, "cpf" varchar, "rg" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171121132620"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-11-21 13:27:36.715948"], ["updated_at", "2017-11-21 13:27:36.715948"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:31:12 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 341ms (Views: 309.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clients" for 127.0.0.1 at 2017-11-21 10:31:27 -0300
+Processing by ClientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9bHANOXolLNrIGMK6aX0A8YcqcpmVgUeK+5GCZxSHx5kxf0K594beqF3q76mFPbLShOnWj/xx49AzBUm8kr/cw==", "client"=>{"name"=>"Luiza", "address"=>"Rua Isso", "cpf"=>"123456789", "rg"=>"1234567890"}, "commit"=>"Save Client"}
+Unpermitted parameters: :address, :cpf, :rg
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "clients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Luiza"], ["created_at", "2017-11-21 13:31:27.863718"], ["updated_at", "2017-11-21 13:31:27.863718"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/1
+Completed 302 Found in 20ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/clients/1" for 127.0.0.1 at 2017-11-21 10:31:27 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ClientsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:32:04 -0300
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 40ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:35:33 -0300
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 42ms (Views: 39.0ms)
+
+
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:35:50 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/new.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 334ms (Views: 298.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clients" for 127.0.0.1 at 2017-11-21 10:36:10 -0300
+Processing by ClientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vnu1dlWc2+6Bth/KvogYH67utHfsQY5FwUoJfSJihdDHD4hIV6pUJ0vh137xORrXIuG657XmTNSqaFpSTHplvQ==", "client"=>{"name"=>"Luiza", "address"=>"Rua Vereador José", "cpf"=>"1234567889", "rg"=>"12340953297"}, "commit"=>"Save Client"}
+Unpermitted parameters: :address, :cpf, :rg
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "clients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Luiza"], ["created_at", "2017-11-21 13:36:10.823193"], ["updated_at", "2017-11-21 13:36:10.823193"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/2
+Completed 302 Found in 20ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/clients/2" for 127.0.0.1 at 2017-11-21 10:36:10 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 69ms (Views: 57.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:37:44 -0300
+Processing by ClientsController#new as HTML
+Started POST "/clients" for 127.0.0.1 at 2017-11-21 10:37:54 -0300
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/new.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 34ms (Views: 31.1ms)
+
+
+Processing by ClientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vnu1dlWc2+6Bth/KvogYH67utHfsQY5FwUoJfSJihdDHD4hIV6pUJ0vh137xORrXIuG657XmTNSqaFpSTHplvQ==", "client"=>{"name"=>"Luiza", "address"=>"Rua Vereador José", "cpf"=>"1234567889", "rg"=>"12340953297"}, "commit"=>"Save Client"}
+Unpermitted parameters: :address, :cpf, :rg
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Luiza"], ["created_at", "2017-11-21 13:37:54.241993"], ["updated_at", "2017-11-21 13:37:54.241993"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/3
+Completed 302 Found in 17ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/clients/3" for 127.0.0.1 at 2017-11-21 10:37:54 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/clients_controller.rb:3:in `show'
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:38:02 -0300
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:39:36 -0300
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 45ms (Views: 40.0ms)
+
+
+Started POST "/clients" for 127.0.0.1 at 2017-11-21 10:39:47 -0300
+Processing by ClientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hQPCeozJb+lGKs4UpqtlgNnus0lxQLmq4pXgpy0IS98Ud/9Ejv/gIIx9BqDpGmdIVeG92SjnezuJt7OIQxCrsg==", "client"=>{"name"=>"Luiza", "address"=>"Rua Vereador", "cpf"=>"121289371", "rg"=>"129837163"}, "commit"=>"Save Client"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "address", "cpf", "rg", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Luiza"], ["address", "Rua Vereador"], ["cpf", "121289371"], ["rg", "129837163"], ["created_at", "2017-11-21 13:39:47.829387"], ["updated_at", "2017-11-21 13:39:47.829387"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/4
+Completed 302 Found in 36ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/clients/4" for 127.0.0.1 at 2017-11-21 10:39:47 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients/4" for 127.0.0.1 at 2017-11-21 10:51:00 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 72ms (Views: 46.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 10:51:03 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  Rendered clients/index.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:    <th>RG</th>
+     9:  </tr>
+    10: 
+    11:  <% @clients.each do |client| %>
+    12:    <tr>
+    13:      <td><%= client.name %></td>
+    14:      <td><%= client.address %></td>
+  
+app/views/clients/index.html.erb:11:in `_app_views_clients_index_html_erb___4446208140301221690_70259225791180'
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 10:51:29 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  Rendered clients/index.html.erb within layouts/application (6.3ms)
+Completed 500 Internal Server Error in 47ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:    <th>RG</th>
+     9:  </tr>
+    10: 
+    11:  <% @clients.each do |client| %>
+    12:    <tr>
+    13:      <td><%= client.name %></td>
+    14:      <td><%= client.address %></td>
+  
+app/views/clients/index.html.erb:11:in `_app_views_clients_index_html_erb__15347451673932824_70351694303260'
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 10:51:38 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 235ms (Views: 231.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/clients/4" for 127.0.0.1 at 2017-11-21 10:51:56 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClient Load (1.5ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 30.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/clients/3" for 127.0.0.1 at 2017-11-21 10:51:58 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 38ms (Views: 31.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clients/1" for 127.0.0.1 at 2017-11-21 10:52:01 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 22.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 10:54:56 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 347ms (Views: 316.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/welcome" for 127.0.0.1 at 2017-11-21 10:54:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/welcome" for 127.0.0.1 at 2017-11-21 10:54:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/welcome/index" for 127.0.0.1 at 2017-11-21 10:55:02 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/welcome/index" for 127.0.0.1 at 2017-11-21 10:55:03 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/welcome/index" for 127.0.0.1 at 2017-11-21 10:55:10 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/welcome/index" for 127.0.0.1 at 2017-11-21 10:55:10 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-21 10:55:11 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 42ms (Views: 36.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 10:55:13 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 36ms (Views: 32.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 10:55:15 -0300
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 35ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clients" for 127.0.0.1 at 2017-11-21 10:55:27 -0300
+Processing by ClientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1AtNUvKLTWA7ri84z5MZn+sbRToV7iHFbZLh3HE3KwWzZ5QLfIilduT05XH41Fcm3w6GJlVXXYS3vFpu7Z7Yrw==", "client"=>{"name"=>"Fips", "address"=>"Rua Baladeira", "cpf"=>"21i903819", "rg"=>"1093819273"}, "commit"=>"Save Client"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "clients" ("name", "address", "cpf", "rg", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Fips"], ["address", "Rua Baladeira"], ["cpf", "21i903819"], ["rg", "1093819273"], ["created_at", "2017-11-21 13:55:27.236278"], ["updated_at", "2017-11-21 13:55:27.236278"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/5
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/clients/5" for 127.0.0.1 at 2017-11-21 10:55:27 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 27.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 10:55:29 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 37ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:15:21 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 101ms (Views: 89.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/clients/5/edit" for 127.0.0.1 at 2017-11-21 11:15:24 -0300
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (7.4ms)
+  Rendered clients/edit.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 63ms (Views: 49.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:15:26 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.5ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 49ms (Views: 43.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/clients/4/edit" for 127.0.0.1 at 2017-11-21 11:15:27 -0300
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (5.8ms)
+  Rendered clients/edit.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 52ms (Views: 41.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/clients/4" for 127.0.0.1 at 2017-11-21 11:15:32 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B6XX2uavC9OR649hIi7Ca14gGUih0QeFhLD+3xNwhlLhYFJEV1lXP9809saIrNh/nMmvRokzffe+UFjbJPufcA==", "client"=>{"name"=>"Luiza", "address"=>"Rua Vereador", "cpf"=>"121289371", "rg"=>"129837164"}, "commit"=>"Update Client", "id"=>"4"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "clients" SET "rg" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["rg", "129837164"], ["updated_at", "2017-11-21 14:15:32.080815"], ["id", 4]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/4
+Completed 302 Found in 11ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/clients/4" for 127.0.0.1 at 2017-11-21 11:15:32 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 51ms (Views: 46.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:15:34 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 40ms (Views: 34.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients/3/edit" for 127.0.0.1 at 2017-11-21 11:15:36 -0300
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.7ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (3.4ms)
+  Rendered clients/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 45ms (Views: 38.8ms | ActiveRecord: 0.7ms)
+
+
+Started PATCH "/clients/3" for 127.0.0.1 at 2017-11-21 11:15:41 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ARzLYTeUynyjB/y/wzm0+S1aYhVhiSqXOut8ju+HUhOJxS1Cp0NpgHduqgpG5SecA1JwwH9yvwxCswspJv+KwA==", "client"=>{"name"=>"Luiza", "address"=>"oi", "cpf"=>"9", "rg"=>"8"}, "commit"=>"Update Client", "id"=>"3"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "clients" SET "address" = ?, "cpf" = ?, "rg" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["address", "oi"], ["cpf", "9"], ["rg", "8"], ["updated_at", "2017-11-21 14:15:41.475451"], ["id", 3]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/3
+Completed 302 Found in 14ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/clients/3" for 127.0.0.1 at 2017-11-21 11:15:41 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:15:42 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 31ms (Views: 26.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients/2/edit" for 127.0.0.1 at 2017-11-21 11:15:44 -0300
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (2.9ms)
+  Rendered clients/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 41ms (Views: 34.3ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/clients/2" for 127.0.0.1 at 2017-11-21 11:15:48 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QQ/qI6iBMwzrGEm/tV3SugSchLJf2BOzjoqpVa5DG4WRub0tvFDt/Ay5bBd4bAV58JmOHZZ4zF6Xy0mAJgZJYw==", "client"=>{"name"=>"", "address"=>"", "cpf"=>"", "rg"=>""}, "commit"=>"Update Client", "id"=>"2"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (3.3ms)
+  Rendered clients/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 31ms (Views: 27.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/clients/2" for 127.0.0.1 at 2017-11-21 11:16:01 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+pY1QetPQ/+ZlgTPkZ5LaU+PeaEx2qCU11R4Isz2YZ1r4gh/6XnMNlPBzHveL0mhw4B3MWh9YgW8disNou6B8A==", "client"=>{"name"=>"oioioi", "address"=>"i9", "cpf"=>"9", "rg"=>"8"}, "commit"=>"Update Client", "id"=>"2"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "clients" SET "name" = ?, "address" = ?, "cpf" = ?, "rg" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["name", "oioioi"], ["address", "i9"], ["cpf", "9"], ["rg", "8"], ["updated_at", "2017-11-21 14:16:01.512634"], ["id", 2]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/2
+Completed 302 Found in 8ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/clients/2" for 127.0.0.1 at 2017-11-21 11:16:01 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 30ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:16:02 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 28ms (Views: 23.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:22:43 -0300
+Started GET "/clients/4/edit" for 127.0.0.1 at 2017-11-21 11:22:43 -0300
+Started GET "/clients/5/edit" for 127.0.0.1 at 2017-11-21 11:22:43 -0300
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:22:43 -0300
+Processing by ClientsController#index as HTML
+Processing by ClientsController#edit as HTML
+Processing by ClientsController#index as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+Processing by ClientsController#edit as HTML
+  Rendering clients/index.html.erb within layouts/application
+  Rendering clients/index.html.erb within layouts/application
+  Rendering clients/edit.html.erb within layouts/application
+  Parameters: {"id"=>"4"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered clients/index.html.erb within layouts/application (10.1ms)
+  Rendered clients/index.html.erb within layouts/application (8.9ms)
+  Rendered clients/_form.html.erb (4.3ms)
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/edit.html.erb within layouts/application (26.3ms)
+  Rendered clients/_form.html.erb (3.2ms)
+  Rendered clients/edit.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 153ms (Views: 141.9ms | ActiveRecord: 0.3ms)
+
+
+Completed 200 OK in 152ms (Views: 139.4ms | ActiveRecord: 0.3ms)
+
+
+Completed 200 OK in 154ms (Views: 114.7ms | ActiveRecord: 1.3ms)
+
+
+Completed 200 OK in 109ms (Views: 96.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:22:52 -0300
+Started GET "/clients/5/edit" for 127.0.0.1 at 2017-11-21 11:22:52 -0300
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:22:52 -0300
+Started GET "/clients/4/edit" for 127.0.0.1 at 2017-11-21 11:22:52 -0300
+Processing by ClientsController#index as HTML
+Processing by ClientsController#edit as HTML
+Processing by ClientsController#index as HTML
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  Rendering clients/index.html.erb within layouts/application
+  Parameters: {"id"=>"4"}
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/index.html.erb within layouts/application (13.9ms)
+  Rendered clients/index.html.erb within layouts/application (17.5ms)
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (4.6ms)
+  Rendered clients/_form.html.erb (2.3ms)
+  Rendered clients/edit.html.erb within layouts/application (32.8ms)
+  Rendered clients/edit.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 81ms (Views: 79.0ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 106ms (Views: 103.7ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 126ms (Views: 119.5ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 124ms (Views: 110.1ms | ActiveRecord: 0.1ms)
+
+
+Started DELETE "/clients/1" for 127.0.0.1 at 2017-11-21 11:22:55 -0300
+Processing by ClientsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"06dzO2OyguW57mOXgwrDCUYgTn+JtPJm+LohS8AQjVpC004FYYQNLHO5qyPMu8HByi9A79ATMPeTmHJkrghtNw==", "id"=>"1"}
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `client' for #<ClientsController:0x007f8b247af9c0>
+Did you mean?  client_url):
+  
+app/controllers/clients_controller.rb:39:in `destroy'
+Started DELETE "/clients/1" for 127.0.0.1 at 2017-11-21 11:23:16 -0300
+Processing by ClientsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"06dzO2OyguW57mOXgwrDCUYgTn+JtPJm+LohS8AQjVpC004FYYQNLHO5qyPMu8HByi9A79ATMPeTmHJkrghtNw==", "id"=>"1"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 1]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients
+Completed 302 Found in 20ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:23:17 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/clients/2" for 127.0.0.1 at 2017-11-21 11:23:20 -0300
+Processing by ClientsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"X/I1wmMlECe6H6e6ixx+6NNpWIlXDKyimvZaUlJ/3dnOhgj8YROf7nBIbw7ErXwgX2ZWGQ6rbjPx1Al9PGc9tA==", "id"=>"2"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 2]]
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients
+Completed 302 Found in 13ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:23:20 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/clients/3" for 127.0.0.1 at 2017-11-21 11:23:23 -0300
+Processing by ClientsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+zpsjxV0OR1Pl4QCDL7FBwkLWhASig+nxah+HmYAF1RqTlGxF0K21IXATLZDD8fPhQRUgEstzTauii0xCBj3OQ==", "id"=>"3"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "clients" WHERE "clients"."id" = ?[0m  [["id", 3]]
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients
+Completed 302 Found in 13ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:23:23 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.4ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 11:23:26 -0300
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/_form.html.erb (3.8ms)
+  Rendered clients/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 48ms (Views: 43.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clients" for 127.0.0.1 at 2017-11-21 11:23:37 -0300
+Processing by ClientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bhMHiu84oku9V/wJV3rOHf+/RkP/bqjj5oo5wdAVjTQJf97TYTtKXWINNkBgPYCky6qFX7/X1KI8pIJzTLx+ng==", "client"=>{"name"=>"Erick Kelvini", "address"=>"Rua da serrinha", "cpf"=>"18397189", "rg"=>"18927192863"}, "commit"=>"Create Client"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "clients" ("name", "address", "cpf", "rg", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Erick Kelvini"], ["address", "Rua da serrinha"], ["cpf", "18397189"], ["rg", "18927192863"], ["created_at", "2017-11-21 14:23:37.741783"], ["updated_at", "2017-11-21 14:23:37.741783"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/6
+Completed 302 Found in 5ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/clients/6" for 127.0.0.1 at 2017-11-21 11:23:37 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 38ms (Views: 34.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:23:39 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 45ms (Views: 39.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients/6/edit" for 127.0.0.1 at 2017-11-21 11:23:47 -0300
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (2.6ms)
+  Rendered clients/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 36ms (Views: 32.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 11:23:48 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 32ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCars (20171121143134)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "plate" varchar, "type" integer, "year" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171121143134"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 11:37:06 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/cars/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/car/new" for 127.0.0.1 at 2017-11-21 11:37:11 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/car/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 11:37:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cars/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 11:37:26 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cars/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-11-21 11:37:40 -0300
+Started GET "/" for 127.0.0.1 at 2017-11-21 11:37:41 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 738ms (Views: 733.6ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 790ms (Views: 758.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 11:37:44 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 11:37:46 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cars/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 11:37:47 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cars/new"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 11:38:09 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 47ms (Views: 43.7ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 11:38:23 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ftqiY77FxCRYSwujhLqWBFxCiiyDOllEdqXxLj/1Farvrp9dvPNL7ZIcwxfLC5TM0E2EvNqdm9Udh6IBUe31xw==", "car"=>{"plate"=>"123456", "type"=>"1", "year"=>"1994"}, "commit"=>"Save Car"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: '1'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Car.inheritance_column to use another column for that information.):
+  
+app/controllers/cars_controller.rb:10:in `create'
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 12:34:55 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 125ms (Views: 109.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 12:34:58 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 12:35:06 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IaDpk6PrQYvnxAGr4lVdv8TZgXmJoDb3ivKMJtnrVn2w1NStod3OQi2TyR+t5F93SNaP6dAH9Gbh0N8Jt/O2EA==", "car"=>{"plate"=>"123456", "type"=>"1", "year"=>"1234"}, "commit"=>"Save Car"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: '1'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Car.inheritance_column to use another column for that information.):
+  
+app/controllers/cars_controller.rb:10:in `create'
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 12:35:25 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RenameCarTypeColumn (20171121153705)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TEMPORARY TABLE "acars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "plate" varchar DEFAULT NULL, "cartype" integer DEFAULT NULL, "year" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "acars" ("id","plate","cartype","year","created_at","updated_at")
+                     SELECT "id","plate","type","year","created_at","updated_at" FROM "cars"[0m
+  [1m[35m (0.8ms)[0m  [1m[35mDROP TABLE "cars"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "cars" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "plate" varchar DEFAULT NULL, "cartype" integer DEFAULT NULL, "year" integer DEFAULT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "cars" ("id","plate","cartype","year","created_at","updated_at")
+                     SELECT "id","plate","cartype","year","created_at","updated_at" FROM "acars"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "acars"[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171121153705"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 12:38:42 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 321ms (Views: 290.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 12:38:49 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0ovaNy9hqds8DVyulg2/8QWKwIx/NuRr2kZ7IxKo+PVD/+cJLVcmEvZalBrZvL05iYXOHCaRJvqxZCgMfLAYmA==", "car"=>{"plate"=>"123456", "cartype"=>"1", "year"=>"1234"}, "commit"=>"Save Car"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "cars" ("plate", "cartype", "year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["plate", "123456"], ["cartype", 1], ["year", 1234], ["created_at", "2017-11-21 15:38:49.345147"], ["updated_at", "2017-11-21 15:38:49.345147"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cars/1
+Completed 302 Found in 17ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/cars/1" for 127.0.0.1 at 2017-11-21 12:38:49 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (6.1ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `plate' for nil:NilClass):
+    1: <p>
+    2:     <strong>Plate:</strong>
+    3:     <%= @client.plate %>
+    4: </p>
+    5: <p>
+    6:     <strong>Car Type:</strong>
+  
+app/views/cars/show.html.erb:3:in `_app_views_cars_show_html_erb__2136241141540332518_70236868832080'
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 12:39:16 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 49ms (Views: 45.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 12:39:23 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hKGP6R2uo8g5PJBfgiYMXmO5Y2gJ1tw0B0c1cAl6MG3njFXHSl1iKlwpws6KKFyzh5mn42NYTikwpdwrCekB5Q==", "car"=>{"plate"=>"123456", "cartype"=>"1", "year"=>"1234"}, "commit"=>"Save Car"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "cars" ("plate", "cartype", "year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["plate", "123456"], ["cartype", 1], ["year", 1234], ["created_at", "2017-11-21 15:39:23.028717"], ["updated_at", "2017-11-21 15:39:23.028717"]]
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cars/2
+Completed 302 Found in 15ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/cars/2" for 127.0.0.1 at 2017-11-21 12:39:23 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 12:53:22 -0300
+Started GET "/" for 127.0.0.1 at 2017-11-21 12:53:22 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 589ms (Views: 584.2ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 616ms (Views: 586.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 12:53:46 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 35ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 12:53:53 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 25.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 12:53:54 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 64ms (Views: 45.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/cars/2" for 127.0.0.1 at 2017-11-21 12:53:59 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 48ms (Views: 28.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 12:54:01 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 41ms (Views: 34.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cars/2/edit" for 127.0.0.1 at 2017-11-21 12:54:01 -0300
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCar Load (0.8ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering cars/edit.html.erb within layouts/application
+  Rendered cars/_form.html.erb (19.5ms)
+  Rendered cars/edit.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 65ms (Views: 49.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 12:54:03 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 40ms (Views: 33.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 12:54:07 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (2.1ms)
+  Rendered cars/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 33ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 12:54:17 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"E5DMD5O3UpdgEfKYkGDH1zj6VfUpUzIA11edahQuq1xwvRYhxESTdQUEoAmYbpc63NqRfkPdoB3gtXQxFL2a1A==", "car"=>{"plate"=>"983718", "cartype"=>"2", "year"=>"1236"}, "commit"=>"Create Car"}
+Unpermitted parameters: :plate, :cartype, :year
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (3.3ms)
+  Rendered cars/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 33ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 12:54:36 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bzTa95/UOvktSsFSQnslVH963fN/l9bvrN8Y6R2wyDL+QOfJneK1MOcdCeYNyiec83XTYyYwFH7H/UvGc6goXw==", "car"=>{"plate"=>"987654", "cartype"=>"9", "year"=>"9876"}, "commit"=>"Create Car"}
+Unpermitted parameters: :plate, :cartype, :year
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (3.1ms)
+  Rendered cars/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 33ms (Views: 29.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 12:56:33 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 12:56:39 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 12:56:39 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 12:56:40 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.7ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 46ms (Views: 37.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/clients/new" for 127.0.0.1 at 2017-11-21 12:56:44 -0300
+Processing by ClientsController#new as HTML
+  Rendering clients/new.html.erb within layouts/application
+  Rendered clients/_form.html.erb (6.8ms)
+  Rendered clients/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/clients" for 127.0.0.1 at 2017-11-21 12:57:12 -0300
+Processing by ClientsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P7tWmrKPbeArqFNqf3SKmxE/Hh5RDyyQwZ0vNkLy8QhY14/DPIyF9vTymSNIM8QiJSrdAhG2UNEbs5SE3lsCog==", "client"=>{"name"=>"zé da silva", "address"=>"rua dos bobos", "cpf"=>"09876543212", "rg"=>"12324535457"}, "commit"=>"Create Client"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (9.0ms)[0m  [1m[32mINSERT INTO "clients" ("name", "address", "cpf", "rg", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "zé da silva"], ["address", "rua dos bobos"], ["cpf", "09876543212"], ["rg", "12324535457"], ["created_at", "2017-11-21 15:57:12.294985"], ["updated_at", "2017-11-21 15:57:12.294985"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/7
+Completed 302 Found in 17ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/clients/7" for 127.0.0.1 at 2017-11-21 12:57:12 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 32ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 12:57:15 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 25ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients/7/edit" for 127.0.0.1 at 2017-11-21 12:57:18 -0300
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (1.6ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (3.4ms)
+  Rendered clients/edit.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 57ms (Views: 38.9ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/clients/7" for 127.0.0.1 at 2017-11-21 12:57:23 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eLPioXM8Q7TgiBPJBUIZkD108ZZw5bxLQvQEwq3BRNXsLdNxh9pnq7Sks6glL6sgf2Rg3oRHSi/+l1sVK5UclA==", "client"=>{"name"=>"Zé da Silva", "address"=>"rua dos bobos", "cpf"=>"09876543212", "rg"=>"12324535457"}, "commit"=>"Update Client", "id"=>"7"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "clients" SET "name" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["name", "Zé da Silva"], ["updated_at", "2017-11-21 15:57:23.853260"], ["id", 7]]
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/7
+Completed 302 Found in 15ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/clients/7" for 127.0.0.1 at 2017-11-21 12:57:23 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 12:57:25 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 35ms (Views: 30.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 12:57:37 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 29ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-21 12:57:37 -0300
+Started GET "/clients/5/edit" for 127.0.0.1 at 2017-11-21 12:57:37 -0300
+Started GET "/clients/4/edit" for 127.0.0.1 at 2017-11-21 12:57:37 -0300
+Processing by ClientsController#index as HTML
+Processing by ClientsController#edit as HTML
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  Rendering clients/index.html.erb within layouts/application
+  Parameters: {"id"=>"4"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered clients/index.html.erb within layouts/application (10.0ms)
+  Rendering clients/edit.html.erb within layouts/application
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (2.7ms)
+  Rendered clients/edit.html.erb within layouts/application (7.7ms)
+  Rendered clients/_form.html.erb (1.8ms)
+  Rendered clients/edit.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 78ms (Views: 75.5ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 86ms (Views: 73.3ms | ActiveRecord: 0.1ms)
+
+
+Completed 200 OK in 91ms (Views: 85.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-21 12:57:38 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Started GET "/" for 127.0.0.1 at 2017-11-21 12:57:38 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 57ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+Completed 200 OK in 72ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 12:57:39 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 28.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars/new" for 127.0.0.1 at 2017-11-21 12:57:41 -0300
+Processing by CarsController#new as HTML
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (2.7ms)
+  Rendered cars/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 12:57:50 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mQJkquz7g1HW29X9w6/7g2yuE78NHINWAMXtBS7f2OT6L76EuwhCs7POh2zLoatuiI7XNGeSEUs3JwReLkzpbA==", "car"=>{"plate"=>"123456", "cartype"=>"1", "year"=>"1234"}, "commit"=>"Create Car"}
+Unpermitted parameters: :plate, :cartype, :year
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/_form.html.erb (5.7ms)
+  Rendered cars/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 38ms (Views: 34.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/cars" for 127.0.0.1 at 2017-11-21 12:58:48 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mQJkquz7g1HW29X9w6/7g2yuE78NHINWAMXtBS7f2OT6L76EuwhCs7POh2zLoatuiI7XNGeSEUs3JwReLkzpbA==", "car"=>{"plate"=>"123456", "cartype"=>"1", "year"=>"1234"}, "commit"=>"Create Car"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "cars" ("plate", "cartype", "year", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["plate", "123456"], ["cartype", 1], ["year", 1234], ["created_at", "2017-11-21 15:58:48.913687"], ["updated_at", "2017-11-21 15:58:48.913687"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cars/3
+Completed 302 Found in 25ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/cars/3" for 127.0.0.1 at 2017-11-21 12:58:50 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 54ms (Views: 48.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 12:58:52 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 46ms (Views: 32.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars/3/edit" for 127.0.0.1 at 2017-11-21 12:58:56 -0300
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering cars/edit.html.erb within layouts/application
+  Rendered cars/_form.html.erb (3.9ms)
+  Rendered cars/edit.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 59ms (Views: 39.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-21 12:58:57 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 43ms (Views: 36.5ms | ActiveRecord: 0.2ms)
+
+

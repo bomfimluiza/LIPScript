@@ -1,0 +1,15 @@
+<p>
+    <strong>Plate:</strong>
+    <%= @car.plate %>
+</p>
+<p>
+    <strong>Car Type:</strong>
+    <%= @car.cartype %>
+</p>
+<p>
+    <strong>Year:</strong>
+    <%= @car.year %>
+</p>
+
+<%= link_to 'Edit', edit_car_path(@car) %> |
+<%= link_to 'Back', cars_path %>
