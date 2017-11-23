@@ -9,10 +9,22 @@ class RentalsController < ApplicationController
 
     def new
         @rental = Rental.new
+
+        @all_cars = Car.all
+        @busy_cars = Car.all.joins(:rentals).where('rentals.enddate > ?', Date.today)
+        
+        @available_cars = @all_cars - @busy_cars
     end
     
     def edit
         @rental = Rental.find(params[:id])
+
+        @all_cars = Car.all
+        @busy_cars = Car.all.joins(:rentals).where('rentals.enddate > ?', Date.today)
+        
+        @available_cars = @all_cars - @busy_cars
+
+        @available_cars.push(Car.find(@rental.car_id))
     end
 
     def create
@@ -21,6 +33,11 @@ class RentalsController < ApplicationController
         if @rental.save
             redirect_to @rental
         else
+            @all_cars = Car.all
+            @busy_cars = Car.all.joins(:rentals).where('rentals.enddate > ?', Date.today)
+            
+            @available_cars = @all_cars - @busy_cars
+            
             render 'new'
         end
     end
@@ -31,6 +48,13 @@ class RentalsController < ApplicationController
         if @rental.update(rental_params)
             redirect_to @rental
         else
+            @all_cars = Car.all
+            @busy_cars = Car.all.joins(:rentals).where('rentals.enddate > ?', Date.today)
+            
+            @available_cars = @all_cars - @busy_cars
+    
+            @available_cars.push(Car.find(@rental.car_id))
+
             render 'edit'
         end
     end
@@ -44,6 +68,6 @@ class RentalsController < ApplicationController
 
     private
         def rental_params
-            params.require(:rental).permit(:clientid, :carid, :startdate, :enddate)
+            params.require(:rental).permit(:client_id, :car_id, :startdate, :enddate)
         end
 end

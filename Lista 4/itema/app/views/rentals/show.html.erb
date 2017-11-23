@@ -1,0 +1,19 @@
+<p>
+    <strong>Client:</strong>
+    <%= @rental.client.name %>
+</p>
+<p>
+    <strong>Car:</strong>
+    <%= @rental.car.plate %>
+</p>
+<p>
+    <strong>Start Date:</strong>
+    <%= @rental.startdate.strftime("%d/%m/%y") %>
+</p>
+<p>
+    <strong>End Date:</strong>
+    <%= @rental.enddate.strftime("%d/%m/%y") %>
+</p>
+
+<%= link_to 'Edit', edit_rental_path(@rental) %> |
+<%= link_to 'Back', rentals_path %>

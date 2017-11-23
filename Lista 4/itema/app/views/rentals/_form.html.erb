@@ -1,0 +1,36 @@
+<%= form_for @rental do |f| %>
+    <% if @rental.errors.any? %>
+        <div id="error_explanation">
+        <h2>
+            <%= pluralize(@rental.errors.count, "error") %> prohibited
+            this rental from being saved:
+        </h2>
+        <ul>
+            <% @rental.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+            <% end %>
+        </ul>
+        </div>
+    <% end %>
+    
+    <p>
+        <%= f.label :startdate %><br>
+        <%= date_select('rental', 'startdate', order: [:day, :month, :year]) %>
+    </p>
+    <p>
+        <%= f.label :enddate %><br>
+        <%= date_select('rental', 'enddate', order: [:day, :month, :year]) %>
+    </p>
+    <p>
+        <%= f.label :client %><br>
+        <%= select(:rental, :client_id, Client.all.collect {|client| [ client.name, client.id ] }, {:prompt => 'Select client...'}) %>
+    </p>
+    <p>
+        <%= f.label :car %><br>
+        <%= select(:rental, :car_id, options_from_collection_for_select(@available_cars, "id", "plate", @rental.car_id), {:prompt => 'Select car...'}) %>
+    </p>
+   
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>

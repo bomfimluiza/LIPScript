@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-    resources :clients, :cars do
-        resources :rentals
-    end
+    resources :clients, :cars
+    resources :rentals
     
     root 'welcome#index'
 end

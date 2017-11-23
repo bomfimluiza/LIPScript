@@ -1,0 +1,25 @@
+<h2>Listing Rentals</h2>
+<%= link_to 'New rental', new_rental_path %>
+<table>
+    <tr>
+        <th>Client</th>
+        <th>Car</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th colspan="3"></th>
+    </tr>
+
+    <% @rental.each do |rental| %>
+        <tr>
+            <td><%= rental.client.name %></td>
+            <td><%= rental.car.plate %></td>
+            <td><%= rental.startdate.strftime("%d/%m/%y") %></td>
+            <td><%= rental.enddate.strftime("%d/%m/%y") %></td>
+            <td><%= link_to 'Show', rental_path(rental) %></td>
+            <td><%= link_to 'Edit', edit_rental_path(rental) %></td>
+            <td><%= link_to 'Delete', rental_path(rental),
+                    method: :delete,
+                    data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+    <% end %>
+</table>
