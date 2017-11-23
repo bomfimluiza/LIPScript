@@ -1,5 +1,9 @@
-<h2>New Car</h2>
+<div class="container">
+    <h2>New Car</h2>
+</div>
 
 <%= render 'form' %>
 
-<%= link_to 'Back', cars_path %>
+<div class="container_back">
+    <%= button_to 'Back', cars_path, method:"get", class:"btnback" %>
+</div>

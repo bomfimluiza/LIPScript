@@ -1,5 +1,9 @@
-<h2>Editing Client</h2>
+<div class="container">
+    <h2>Edit Client</h2>
+</div>
 
 <%= render 'form' %>
 
-<%= link_to 'Back', clients_path %>
+<div class="container_back">
+    <%= button_to 'Back', clients_path, method:"get", class:"btnback" %>
+</div>

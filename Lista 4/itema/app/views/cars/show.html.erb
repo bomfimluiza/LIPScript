@@ -1,3 +1,7 @@
+<div class="container">
+    <h2>Car</h2>
+</div>
+
 <p>
     <strong>Plate:</strong>
     <%= @car.plate %>
@@ -19,5 +23,7 @@
     <%= @car.year %>
 </p>
 
-<%= link_to 'Edit', edit_car_path(@car) %> |
-<%= link_to 'Back', cars_path %>
+<div class="container_back">
+    <%= button_to 'Back', cars_path, method:"get", class:"btnback", style:"float:left; margin-right: 5px" %>
+    <%= button_to 'Edit', edit_car_path, method:"get", class:"btnback" %>
+</div>

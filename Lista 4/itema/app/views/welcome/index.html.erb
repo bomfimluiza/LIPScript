@@ -1,8 +1,9 @@
-<h1>Car Rental System</h1>
+<div class="container">
+    <h2>Car Rental System</h2>
+</div>
 
-
-<%= link_to 'Rentals', controller: 'rentals' %>
-<br>
-<%= link_to 'Cars', controller: 'cars' %>
-<br>
-<%= link_to 'Clients', controller: 'clients' %>
+<div class="welcome-wrapper">
+    <%= button_to 'Rentals', rentals_path, :method => "get", class:"btnto" %>
+    <%= button_to 'Cars', cars_path, :method => "get", class:"btnto" %>
+    <%= button_to 'Clients', clients_path, :method => "get", class:"btnto" %>
+</div>

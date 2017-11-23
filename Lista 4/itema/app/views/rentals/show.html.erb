@@ -1,3 +1,7 @@
+<div class="container">
+    <h2>Rental</h2>
+</div>
+
 <p>
     <strong>Client:</strong>
     <%= @rental.client.name %>
@@ -15,5 +19,7 @@
     <%= @rental.enddate.strftime("%d/%m/%y") %>
 </p>
 
-<%= link_to 'Edit', edit_rental_path(@rental) %> |
-<%= link_to 'Back', rentals_path %>
+<div class="container_back">
+    <%= button_to 'Back', rentals_path, method:"get", class:"btnback", style:"float:left; margin-right: 5px;" %>
+    <%= button_to 'Edit', edit_rental_path, method:"get", class:"btnback" %>
+</div>

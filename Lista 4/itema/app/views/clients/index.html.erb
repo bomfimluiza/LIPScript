@@ -1,30 +1,37 @@
-<h2>Listing Clients</h2>
+<div class="container">
+    <h2>Clients</h2>
+</div>
 
-<%= link_to 'New client', new_client_path %>
-<br>
-<br>
-<table>
- <tr>
-   <th>Name</th>
-   <th>Address</th>
-   <th>CPF</th>
-   <th>RG</th>
-   <th colspan="3"></th>
- </tr>
+<div class="container_new">
+    <%= button_to 'New Client', new_client_path, method:"get", class:"btnnew" %>
+</div>
 
- <% @client.each do |client| %>
-   <tr>
-     <td><%= client.name %></td>
-     <td><%= client.address %></td>
-     <td><%= client.cpf %></td>
-     <td><%= client.rg %></td>
-     <td><%= link_to 'Show', client_path(client) %></td>
-     <td><%= link_to 'Edit', edit_client_path(client) %></td>
-     <td><%= link_to 'Delete', client_path(client),
-             method: :delete,
-             data: { confirm: 'Are you sure?' } %></td>
-   </tr>
- <% end %>
-</table>
-<br>
-<%= link_to 'Back', root_path %>
+<div class="table-wrapper">
+    <table>
+        <tr class="thead">
+            <th>Name</th>
+            <th>Address</th>
+            <th>CPF</th>
+            <th>RG</th>
+            <th colspan="3"></th>
+        </tr>
+    
+        <% @client.each do |client| %>
+            <tr class="tbody">
+                <td><%= client.name %></td>
+                <td><%= client.address %></td>
+                <td><%= client.cpf %></td>
+                <td><%= client.rg %></td>
+                <td><%= link_to 'Show', client_path(client) %></td>
+                <td><%= link_to 'Edit', edit_client_path(client) %></td>
+                <td><%= link_to 'Delete', client_path(client),
+                        method: :delete,
+                        data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+        <% end %>
+    </table>
+</div>
+
+<div class="container_back">
+    <%= button_to 'Back', root_path, method:"get", class:"btnback" %>
+</div>

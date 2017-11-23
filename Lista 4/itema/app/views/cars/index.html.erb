@@ -1,38 +1,45 @@
-<h2>Listing Cars</h2>
+<div class="container">
+    <h2>Cars</h2>
+</div>
 
-<%= link_to 'New car', new_car_path %>
-<br>
-<br>
-<table>
-    <tr>
-        <th>Plate</th>
-        <th>Car Type</th>
-        <th>Year</th>
-        <th colspan="3"></th>
-    </tr>
+<div class="container_new">
+    <%= button_to 'New Car', new_car_path, method:"get", class:"btnnew" %>
+</div>
 
-    <% @car.each do |car| %>
-        <tr>
-            <td><%= car.plate %></td>
-            <td>
-            <% if car.cartype == 1 %>
-                Urban
-            <% end %>
-            <% if car.cartype == 2 %>
-                Motocross
-            <% end %>
-            <% if car.cartype == 3 %>
-                Luxury
-            <% end %>
-            </td>
-            <td><%= car.year %></td>
-            <td><%= link_to 'Show', car_path(car) %></td>
-            <td><%= link_to 'Edit', edit_car_path(car) %></td>
-            <td><%= link_to 'Delete', car_path(car),
-                    method: :delete,
-                    data: { confirm: 'Are you sure?' } %></td>
+<div class="table-wrapper">
+    <table>
+        <tr class="thead">
+            <th>Plate</th>
+            <th>Car Type</th>
+            <th>Year</th>
+            <th colspan="3"></th>
         </tr>
-    <% end %>
-</table>
-<br>
-<%= link_to 'Back', root_path %>
+
+        <% @car.each do |car| %>
+            <tr class="tbody">
+                <td><%= car.plate %></td>
+                <td>
+                <% if car.cartype == 1 %>
+                    Urban
+                <% end %>
+                <% if car.cartype == 2 %>
+                    Motocross
+                <% end %>
+                <% if car.cartype == 3 %>
+                    Luxury
+                <% end %>
+                </td>
+                <td><%= car.year %></td>
+                <td><%= link_to 'Show', car_path(car) %></td>
+                <td><%= link_to 'Edit', edit_car_path(car) %></td>
+                <td><%= link_to 'Delete', car_path(car),
+                        method: :delete,
+                        data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+        <% end %>
+    </table>
+</div>
+
+<div class="container_back">
+    <%= button_to 'Back', root_path, method:"get", class:"btnback" %>
+</div>

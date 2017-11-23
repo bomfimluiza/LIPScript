@@ -1,5 +1,9 @@
-<h2>Edit Rental</h2>
+<div class="container">
+    <h2>Edit Rental</h2>
+</div>
 
 <%= render 'form' %>
 
-<%= link_to 'Back', rentals_path %>
+<div class="container_back">
+    <%= button_to 'Back', rentals_path, method:"get", class:"btnback" %>
+</div>
