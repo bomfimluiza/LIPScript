@@ -6814,3 +6814,515 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 66ms (Views: 49.7ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/rentals" for 127.0.0.1 at 2017-11-23 09:57:56 -0300
+Processing by RentalsController#index as HTML
+  Rendering rentals/index.html.erb within layouts/application
+  [1m[36mRental Load (1.3ms)[0m  [1m[34mSELECT "rentals".* FROM "rentals"[0m
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered rentals/index.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 146ms (Views: 129.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 09:57:59 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 52ms (Views: 45.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-23 09:58:00 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 49ms (Views: 39.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/cars/4/edit" for 127.0.0.1 at 2017-11-23 09:58:06 -0300
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering cars/edit.html.erb within layouts/application
+  Rendered cars/_form.html.erb (7.3ms)
+  Rendered cars/edit.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 55ms (Views: 50.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/cars/4" for 127.0.0.1 at 2017-11-23 09:58:14 -0300
+Processing by CarsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wocQtvk9PrVgXmHziVD7NzE1aRuCXNzfEhScFEoJsP0EEH8HlV5HvgPqCabhZ+PZevLbpKCOOSp7y7I/KhtIIw==", "car"=>{"plate"=>"OIU7654", "cartype"=>"1", "year"=>"2345"}, "commit"=>"Update Car", "id"=>"4"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[33mUPDATE "cars" SET "plate" = ?, "cartype" = ?, "updated_at" = ? WHERE "cars"."id" = ?[0m  [["plate", "OIU7654"], ["cartype", 1], ["updated_at", "2017-11-23 12:58:14.491741"], ["id", 4]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cars/4
+Completed 302 Found in 31ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/cars/4" for 127.0.0.1 at 2017-11-23 09:58:14 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 34.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-23 09:58:15 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 55ms (Views: 47.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/cars/6/edit" for 127.0.0.1 at 2017-11-23 09:58:20 -0300
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cars/edit.html.erb within layouts/application
+  Rendered cars/_form.html.erb (3.5ms)
+  Rendered cars/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 58ms (Views: 51.0ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/cars/6" for 127.0.0.1 at 2017-11-23 09:58:25 -0300
+Processing by CarsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VhM73uyP9SG4jMXCp0Sc8E9Zoyvj9FtMaKhFb1fxIfYVGX/Bds/IWL6EP1k1Wpxtw5QjjfDruloHabGMhr41Ig==", "car"=>{"plate"=>"PMM-9090", "cartype"=>"1", "year"=>"2019"}, "commit"=>"Update Car", "id"=>"6"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering cars/edit.html.erb within layouts/application
+  Rendered cars/_form.html.erb (3.1ms)
+  Rendered cars/edit.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/cars/6" for 127.0.0.1 at 2017-11-23 09:58:30 -0300
+Processing by CarsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4yZ2TWK8qFsN54eYMc05hE0HJW18xnW0yYC0NQ34YxFyUktzYIonksewTyx+fDtMwQgr/SVhtyWioucaY+CDfA==", "car"=>{"plate"=>"PMM9090", "cartype"=>"1", "year"=>"2019"}, "commit"=>"Update Car", "id"=>"6"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cars/6
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/cars/6" for 127.0.0.1 at 2017-11-23 09:58:30 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 32ms (Views: 27.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-23 09:58:31 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 40ms (Views: 33.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/cars/3/edit" for 127.0.0.1 at 2017-11-23 09:58:34 -0300
+Processing by CarsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering cars/edit.html.erb within layouts/application
+  Rendered cars/_form.html.erb (2.4ms)
+  Rendered cars/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 39ms (Views: 30.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/cars/3" for 127.0.0.1 at 2017-11-23 09:58:44 -0300
+Processing by CarsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oj7QqyZsFUFx6qtZgJhg4ockJ+9VClaZ+1fn1GQmLMscyBWI18jzFGPTILGe1mUt2X0NgraOvGKp9ruYqxjL3w==", "car"=>{"plate"=>"PNG6587", "cartype"=>"1", "year"=>"1234"}, "commit"=>"Update Car", "id"=>"3"}
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "cars" SET "plate" = ?, "updated_at" = ? WHERE "cars"."id" = ?[0m  [["plate", "PNG6587"], ["updated_at", "2017-11-23 12:58:44.515808"], ["id", 3]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/cars/3
+Completed 302 Found in 15ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/cars/3" for 127.0.0.1 at 2017-11-23 09:58:44 -0300
+Processing by CarsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-23 09:58:45 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.2ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 42ms (Views: 34.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 09:58:53 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rentals" for 127.0.0.1 at 2017-11-23 09:58:55 -0300
+Processing by RentalsController#index as HTML
+  Rendering rentals/index.html.erb within layouts/application
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT "rentals".* FROM "rentals"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered rentals/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 41ms (Views: 35.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 09:59:00 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 43ms (Views: 36.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-23 09:59:01 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/clients/4/edit" for 127.0.0.1 at 2017-11-23 09:59:05 -0300
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClient Load (1.0ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (6.4ms)
+  Rendered clients/edit.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 59ms (Views: 39.7ms | ActiveRecord: 1.0ms)
+
+
+Started PATCH "/clients/4" for 127.0.0.1 at 2017-11-23 09:59:20 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o3ZRFiGWrLdSWni9R3ipwnQPDRu9QoXix3MP30zU6V5Fs9SIkGDwWxyFARrt+rPWtua7FZWg/5D9k6nbe1/wfA==", "client"=>{"name"=>"Mary", "address"=>"Street X", "cpf"=>"121289371", "rg"=>"129837164"}, "commit"=>"Update Client", "id"=>"4"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (4.9ms)
+  Rendered clients/edit.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 42ms (Views: 38.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/clients/4" for 127.0.0.1 at 2017-11-23 09:59:36 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PHAaiuhAZgG+hrPCHjQatby8ow62D4HdEnonQvuc0sWtBCe06nbpyHTRe3ZRhRh9MLOtnu+oQ0x5WHRtlYQyqA==", "client"=>{"name"=>"Mary Doe", "address"=>"Street X", "cpf"=>"12128937112", "rg"=>"129837164"}, "commit"=>"Update Client", "id"=>"4"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "clients" SET "name" = ?, "address" = ?, "cpf" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["name", "Mary Doe"], ["address", "Street X"], ["cpf", "12128937112"], ["updated_at", "2017-11-23 12:59:36.720052"], ["id", 4]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/4
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/clients/4" for 127.0.0.1 at 2017-11-23 09:59:36 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 33ms (Views: 28.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-23 09:59:39 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients/5/edit" for 127.0.0.1 at 2017-11-23 09:59:42 -0300
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (2.6ms)
+  Rendered clients/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/clients/5" for 127.0.0.1 at 2017-11-23 09:59:51 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RJm6/0VsaTp6+WoqZIViRIKoCyJZfEbMzPZpsbeCUx6/W3//79M8jy27yLYXlSIr4DBKCMQ/kiGKJRwHDKQdYA==", "client"=>{"name"=>"John Doe", "address"=>"Avenue Y", "cpf"=>"21i903819", "rg"=>"1093819273"}, "commit"=>"Update Client", "id"=>"5"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[31mrollback transaction[0m
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (2.9ms)
+  Rendered clients/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 39ms (Views: 33.3ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/clients/5" for 127.0.0.1 at 2017-11-23 10:00:03 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YZdfqlKlJbgX0w11xcjC4NjrijLDtN/vbOazkgHtvnLw42KUUJOqcd2ExcGKecAoVOSEopoTHX4HxOC9b/VeHw==", "client"=>{"name"=>"John Doe", "address"=>"Avenue Y", "cpf"=>"21903819001", "rg"=>"1093819273"}, "commit"=>"Update Client", "id"=>"5"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "clients" SET "name" = ?, "address" = ?, "cpf" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["name", "John Doe"], ["address", "Avenue Y"], ["cpf", "21903819001"], ["updated_at", "2017-11-23 13:00:03.051055"], ["id", 5]]
+  [1m[35m (9.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/5
+Completed 302 Found in 17ms (ActiveRecord: 10.5ms)
+
+
+Started GET "/clients/5" for 127.0.0.1 at 2017-11-23 10:00:03 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-23 10:00:04 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.5ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 50ms (Views: 44.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/clients/6/edit" for 127.0.0.1 at 2017-11-23 10:00:08 -0300
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (2.4ms)
+  Rendered clients/edit.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 48ms (Views: 31.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/clients/6" for 127.0.0.1 at 2017-11-23 10:00:47 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4Yy3oQggte/z/xaDyApv7zwUhSKTerlv2XmUbDRp8XI43ng/GzFNqTu/8G0QI2Z1PQodX3QhvjwQsHpClVDwtw==", "client"=>{"name"=>"Jane Smith", "address"=>"W Lane", "cpf"=>"18397189", "rg"=>"18927192863"}, "commit"=>"Update Client", "id"=>"6"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (3.2ms)
+  Rendered clients/edit.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 35ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/clients/6" for 127.0.0.1 at 2017-11-23 10:00:50 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EJOgRjWhOv7uNlJCULtdn/hIdarldXrauJg9RTpRYByB5514N5e1NyRhmvYfCl9XdEd7OrzSuEvTum5qVEmAcQ==", "client"=>{"name"=>"Jane Smith", "address"=>"W Lane", "cpf"=>"18397189123", "rg"=>"18927192863"}, "commit"=>"Update Client", "id"=>"6"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "clients" SET "name" = ?, "address" = ?, "cpf" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["name", "Jane Smith"], ["address", "W Lane"], ["cpf", "18397189123"], ["updated_at", "2017-11-23 13:00:50.657118"], ["id", 6]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/6
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/clients/6" for 127.0.0.1 at 2017-11-23 10:00:50 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 32ms (Views: 28.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-23 10:00:52 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 40ms (Views: 32.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients/4/edit" for 127.0.0.1 at 2017-11-23 10:00:57 -0300
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (2.6ms)
+  Rendered clients/edit.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 35ms (Views: 27.8ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/clients/4" for 127.0.0.1 at 2017-11-23 10:01:03 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n6CYLoGKQiZZfXiLsC9E3k14v+pP3ft5fxi8t2Baavt5ZR2wMHweyheiASwarV7Kj5EJ5Gc/gQtF+BqzV9Fz2Q==", "client"=>{"name"=>"Mary Doe", "address"=>"X Street", "cpf"=>"12128937112", "rg"=>"129837164"}, "commit"=>"Update Client", "id"=>"4"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "clients" SET "address" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["address", "X Street"], ["updated_at", "2017-11-23 13:01:03.239740"], ["id", 4]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/4
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/clients/4" for 127.0.0.1 at 2017-11-23 10:01:03 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-23 10:01:04 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients/5/edit" for 127.0.0.1 at 2017-11-23 10:01:05 -0300
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (13.0ms)
+  Rendered clients/edit.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 61ms (Views: 56.5ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/clients/5" for 127.0.0.1 at 2017-11-23 10:01:10 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UU2Wwxt73QEqgIQIyp0UkpcbZHtp6ucfIgUcrj31Bw6qj1PDscSItH3CJpS5jVT99YMlUfSpM/Jk1mkYhtNJcA==", "client"=>{"name"=>"John Doe", "address"=>"Y Avenue", "cpf"=>"21903819001", "rg"=>"1093819273"}, "commit"=>"Update Client", "id"=>"5"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "clients" SET "address" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["address", "Y Avenue"], ["updated_at", "2017-11-23 13:01:10.534926"], ["id", 5]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/5
+Completed 302 Found in 15ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/clients/5" for 127.0.0.1 at 2017-11-23 10:01:10 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 35ms (Views: 31.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-23 10:01:11 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 49ms (Views: 42.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/clients/7/edit" for 127.0.0.1 at 2017-11-23 10:01:15 -0300
+Processing by ClientsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering clients/edit.html.erb within layouts/application
+  Rendered clients/_form.html.erb (3.0ms)
+  Rendered clients/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 54ms (Views: 45.5ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/clients/7" for 127.0.0.1 at 2017-11-23 10:01:37 -0300
+Processing by ClientsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z9PQw8mDlS0uNJ1CWCMKF2RL3IPm5X8D9Y6Atpcut1JbTeETPWWxMnoYPSN4TrinJltNyxJHiWdJ7d9hEXrvEw==", "client"=>{"name"=>"Bill Smith", "address"=>"Z Boulevard", "cpf"=>"09876543212", "rg"=>"12324535457"}, "commit"=>"Update Client", "id"=>"7"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "clients" SET "name" = ?, "address" = ?, "updated_at" = ? WHERE "clients"."id" = ?[0m  [["name", "Bill Smith"], ["address", "Z Boulevard"], ["updated_at", "2017-11-23 13:01:37.283133"], ["id", 7]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/clients/7
+Completed 302 Found in 13ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/clients/7" for 127.0.0.1 at 2017-11-23 10:01:37 -0300
+Processing by ClientsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering clients/show.html.erb within layouts/application
+  Rendered clients/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-23 10:01:38 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.2ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 49ms (Views: 40.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 10:01:55 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 38ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cars" for 127.0.0.1 at 2017-11-23 10:01:56 -0300
+Processing by CarsController#index as HTML
+  Rendering cars/index.html.erb within layouts/application
+  [1m[36mCar Load (0.3ms)[0m  [1m[34mSELECT "cars".* FROM "cars"[0m
+  Rendered cars/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 36ms (Views: 29.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 10:01:59 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 45ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/clients" for 127.0.0.1 at 2017-11-23 10:02:00 -0300
+Processing by ClientsController#index as HTML
+  Rendering clients/index.html.erb within layouts/application
+  [1m[36mClient Load (0.3ms)[0m  [1m[34mSELECT "clients".* FROM "clients"[0m
+  Rendered clients/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 43ms (Views: 33.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 10:02:01 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 49ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rentals" for 127.0.0.1 at 2017-11-23 10:02:02 -0300
+Processing by RentalsController#index as HTML
+  Rendering rentals/index.html.erb within layouts/application
+  [1m[36mRental Load (0.3ms)[0m  [1m[34mSELECT "rentals".* FROM "rentals"[0m
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mClient Load (0.1ms)[0m  [1m[34mSELECT  "clients".* FROM "clients" WHERE "clients"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCar Load (0.1ms)[0m  [1m[34mSELECT  "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered rentals/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 43ms (Views: 38.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 10:02:15 -0300
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 54ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
