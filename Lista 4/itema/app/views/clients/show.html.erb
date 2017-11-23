@@ -1,25 +1,37 @@
-<div class="container">
-    <h2>Client</h2>
+<div class="sidemenu">
+    <h2>Car Rental System</h2>
+    <hr>
+    <%= button_to 'Rentals', rentals_path, :method => "get", class:"btnto" %>
+    <%= button_to 'Cars', cars_path, :method => "get", class:"btnto" %>
+    <%= button_to 'Clients', clients_path, :method => "get", class:"btnto" %>
 </div>
 
-<p>
-    <strong>Name:</strong>
-    <%= @client.name %>
-</p>
-<p>
-    <strong>Address:</strong>
-    <%= @client.address %>
-</p>
-<p>
-    <strong>CPF:</strong>
-    <%= @client.cpf %>
-</p>
-<p>
-    <strong>RG:</strong>
-    <%= @client.rg %>
-</p>
+<div class="content">
+    <div class="container">
+        <h2>Client</h2>
+    </div>
 
-<div class="container_back">
-    <%= button_to 'Edit', clients_path, method:"get", class:"btnback", style:"float:left; margin-right: 5px;" %>
-    <%= button_to 'Back', edit_client_path, method:"get", class:"btnback" %>
+    <div class="form">
+        <p>
+            <strong>Name:</strong>
+            <%= @client.name %>
+        </p>
+        <p>
+            <strong>Address:</strong>
+            <%= @client.address %>
+        </p>
+        <p>
+            <strong>CPF:</strong>
+            <%= @client.cpf %>
+        </p>
+        <p>
+            <strong>RG:</strong>
+            <%= @client.rg %>
+        </p>
+    </div>
+
+    <div class="container_back">
+        <%= button_to 'Edit', clients_path, method:"get", class:"btnback", style:"float:left; margin-right: 5px;" %>
+        <%= button_to 'Back', edit_client_path, method:"get", class:"btnback" %>
+    </div>
 </div>

@@ -1,25 +1,37 @@
-<div class="container">
-    <h2>Rental</h2>
+<div class="sidemenu">
+    <h2>Car Rental System</h2>
+    <hr>
+    <%= button_to 'Rentals', rentals_path, :method => "get", class:"btnto" %>
+    <%= button_to 'Cars', cars_path, :method => "get", class:"btnto" %>
+    <%= button_to 'Clients', clients_path, :method => "get", class:"btnto" %>
 </div>
 
-<p>
-    <strong>Client:</strong>
-    <%= @rental.client.name %>
-</p>
-<p>
-    <strong>Car:</strong>
-    <%= @rental.car.plate %>
-</p>
-<p>
-    <strong>Start Date:</strong>
-    <%= @rental.startdate.strftime("%d/%m/%y") %>
-</p>
-<p>
-    <strong>End Date:</strong>
-    <%= @rental.enddate.strftime("%d/%m/%y") %>
-</p>
+<div class="content">
+    <div class="container">
+        <h2>Rental</h2>
+    </div>
 
-<div class="container_back">
-    <%= button_to 'Back', rentals_path, method:"get", class:"btnback", style:"float:left; margin-right: 5px;" %>
-    <%= button_to 'Edit', edit_rental_path, method:"get", class:"btnback" %>
+    <div class="form">
+        <p>
+            <strong>Client:</strong>
+            <%= @rental.client.name %>
+        </p>
+        <p>
+            <strong>Car:</strong>
+            <%= @rental.car.plate %>
+        </p>
+        <p>
+            <strong>Start Date:</strong>
+            <%= @rental.startdate.strftime("%d/%m/%y") %>
+        </p>
+        <p>
+            <strong>End Date:</strong>
+            <%= @rental.enddate.strftime("%d/%m/%y") %>
+        </p>
+    </div>
+
+    <div class="container_back">
+        <%= button_to 'Back', rentals_path, method:"get", class:"btnback", style:"float:left; margin-right: 5px;" %>
+        <%= button_to 'Edit', edit_rental_path, method:"get", class:"btnback" %>
+    </div>
 </div>

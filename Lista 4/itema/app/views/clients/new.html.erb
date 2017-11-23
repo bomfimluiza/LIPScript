@@ -1,9 +1,21 @@
-<div class="container">
-    <h2>New Client</h2>
+<div class="sidemenu">
+    <h2>Car Rental System</h2>
+    <hr>
+    <%= button_to 'Rentals', rentals_path, :method => "get", class:"btnto" %>
+    <%= button_to 'Cars', cars_path, :method => "get", class:"btnto" %>
+    <%= button_to 'Clients', clients_path, :method => "get", class:"btnto" %>
 </div>
 
-<%= render 'form' %>
+<div class="content">
+    <div class="container">
+        <h2>New Client</h2>
+    </div>
 
-<div class="container_back">
-    <%= button_to 'Back', clients_path, method:"get", class:"btnback" %>
+    <div class="form">
+        <%= render 'form' %>
+    </div>
+
+    <div class="container_back">
+        <%= button_to 'Back', clients_path, method:"get", class:"btnback" %>
+    </div>
 </div>

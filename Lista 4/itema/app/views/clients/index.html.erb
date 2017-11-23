@@ -1,37 +1,46 @@
-<div class="container">
-    <h2>Clients</h2>
+<div class="sidemenu">
+    <h2>Car Rental System</h2>
+    <hr>
+    <%= button_to 'Rentals', rentals_path, :method => "get", class:"btnto" %>
+    <%= button_to 'Cars', cars_path, :method => "get", class:"btnto" %>
+    <%= button_to 'Clients', clients_path, :method => "get", class:"btnto" %>
 </div>
 
-<div class="container_new">
-    <%= button_to 'New Client', new_client_path, method:"get", class:"btnnew" %>
-</div>
+<div class="content">
+    <div class="container">
+        <h2>Clients</h2>
+    </div>
+    <div class="container_new">
+        <%= button_to 'New Client', new_client_path, method:"get", class:"btnnew" %>
+    </div>
 
-<div class="table-wrapper">
-    <table>
-        <tr class="thead">
-            <th>Name</th>
-            <th>Address</th>
-            <th>CPF</th>
-            <th>RG</th>
-            <th colspan="3"></th>
-        </tr>
-    
-        <% @client.each do |client| %>
-            <tr class="tbody">
-                <td><%= client.name %></td>
-                <td><%= client.address %></td>
-                <td><%= client.cpf %></td>
-                <td><%= client.rg %></td>
-                <td><%= link_to 'Show', client_path(client) %></td>
-                <td><%= link_to 'Edit', edit_client_path(client) %></td>
-                <td><%= link_to 'Delete', client_path(client),
-                        method: :delete,
-                        data: { confirm: 'Are you sure?' } %></td>
+    <div class="table-wrapper">
+        <table>
+            <tr class="thead">
+                <th>Name</th>
+                <th>Address</th>
+                <th>CPF</th>
+                <th>RG</th>
+                <th colspan="3"></th>
             </tr>
-        <% end %>
-    </table>
-</div>
+        
+            <% @client.each do |client| %>
+                <tr class="tbody">
+                    <td><%= client.name %></td>
+                    <td><%= client.address %></td>
+                    <td><%= client.cpf %></td>
+                    <td><%= client.rg %></td>
+                    <td><%= link_to 'Show', client_path(client) %></td>
+                    <td><%= link_to 'Edit', edit_client_path(client) %></td>
+                    <td><%= link_to 'Delete', client_path(client),
+                            method: :delete,
+                            data: { confirm: 'Are you sure?' } %></td>
+                </tr>
+            <% end %>
+        </table>
+    </div>
 
-<div class="container_back">
-    <%= button_to 'Back', root_path, method:"get", class:"btnback" %>
+    <div class="container_back">
+        <%= button_to 'Back', root_path, method:"get", class:"btnback" %>
+    </div>
 </div>

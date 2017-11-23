@@ -17,27 +17,45 @@
 body {
     background-color: #eadeef;
     font-family: Arial, sans-serif;
-    padding: 30px;
+    margin: 0px;
+}
+
+.sidemenu {
+    background-color: #7f5591;
+    width: 20vw;
+    height: 100vh;
+    float: left;
+    text-align: center;
+}
+
+.sidemenu h2{
+    color: #EFEFEF;
+}
+
+.sidemenu hr{
+    border-color: #EFEFEF;
+}
+
+.content {
+    width: 80vw;
+    float: right;
 }
 
 .container {
     text-align: center;
     background-color: #7f5591;
-    height: 60px;
-    margin-top: -50px;
-    margin-left: -40px;
-    margin-right: -40px;
-    margin-bottom: 15px;
-    padding: 10px;
+    height: 68.5px;
+    margin-top: -20px;
 }
 
 .container h2 {
     color: #EFEFEF;
+    padding-top: 20px;
 }
 
 .btnto {
     font-size: 20px;
-    width: 100%;
+    width: 90%;
     background-color: #fdf9ff;
     border-radius: 6px;
     height: 80px;
@@ -56,7 +74,7 @@ body {
     font-size: 16px;
     width: 100px;
     background-color: #fdf9ff;
-    margin-bottom: 10px;
+    margin: 20px;
     border-radius: 6px;
 }
 
@@ -68,7 +86,7 @@ body {
     font-size: 16px;
     width: 100px;
     background-color: #fdf9ff;
-    margin-top: 15px;
+    margin: 20px;
     border-radius: 6px;
 }
 
@@ -90,4 +108,8 @@ body {
 
 .table-wrapper table tr.tbody {
     background-color: #fdf9ff;
+}
+
+.form {
+    margin: 20px;
 }
